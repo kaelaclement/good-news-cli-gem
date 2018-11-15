@@ -1,0 +1,2 @@
+class GoodNews::Article
+end

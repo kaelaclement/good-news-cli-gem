@@ -1,0 +1,2 @@
+class GoodNews::Scraper
+end
