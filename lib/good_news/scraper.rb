@@ -3,10 +3,6 @@ class GoodNews::Scraper
     front_page = Nokogiri::HTML(open("https://goodnewsnetwork.org"))
     current_articles = front_page.css("div.td-block-span6")
     current_articles.shift
-        # headline: article.css("a").attribute("title").value
-        # url: article.css("a").attribute("href").value
-        # date: article.css("time").text
-        # category: article.css("a.td-post-category").text
     current_articles.each do |article|
         a = GoodNews::Article.new
         a.headline = article.css("a").attribute("title").value
@@ -18,8 +14,6 @@ class GoodNews::Scraper
   end
     
   def set_article_text_and_author(article, url)
-    # author: article_page.css("div.td-post-author-name a").text
-    # text: article_page.css("p").text
     article_page = Nokogiri::HTML(open(url))
     article.author = article_page.css("div.td-post-author-name a").text
     article.text = article_page.css("p")
