@@ -10,7 +10,6 @@ Gem::Specification.new do |spec|
   spec.email         = ["'stephanie.kaela@gmail.com'"]
 
   spec.summary       = "CLI gem for current positive news stories."
-#  spec.description   = %q{TODO: Write a longer description or delete this line.}
 #  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
   spec.license       = "MIT"
 

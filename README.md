@@ -1,6 +1,6 @@
 # Good News
 
-This gem brings you the current positive news stories.
+This gem brings you current positive news stories from Good News Network.
 
 ## Installation
 
