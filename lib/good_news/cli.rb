@@ -37,7 +37,7 @@ class GoodNews::CLI
 		puts ""
 		article.text
 		puts ""
-		puts "You can read this article in your browser at: #{article.url}"
+		puts "You can read the rest of this article in your browser at: #{article.url}"
 		puts ""
 	end
 	  

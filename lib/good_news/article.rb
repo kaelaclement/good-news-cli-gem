@@ -13,6 +13,8 @@ class GoodNews::Article
   end
 
   def text
-    @text.each {|p| puts p.text}
+    puts @text[0].text
+    puts @text[1].text
+    puts @text[2].text
   end
 end
