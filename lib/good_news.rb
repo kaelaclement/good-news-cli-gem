@@ -1,4 +1,4 @@
-require_relative '../config/environment' #KEEP THIS
+require_relative '../config/environment'
 
 module GoodNews
   class Error < StandardError; end
