@@ -1,6 +1,5 @@
 class GoodNews::Article
-  attr_accessor :headline, :date, :category, :url, :author
-  attr_writer :text
+  attr_accessor :headline, :date, :category, :url, :author, :text
     
   @@all = []
     
@@ -10,11 +9,5 @@ class GoodNews::Article
     
   def self.all
     @@all
-  end
-
-  def text
-    puts @text[0].text
-    puts @text[1].text
-    puts @text[2].text
   end
 end
